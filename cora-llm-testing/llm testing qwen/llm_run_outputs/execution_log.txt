@@ -1,0 +1,44 @@
+
+
+===== ATTEMPT 0 =====
+
+--- STDERR ---
+  File "C:\Users\ADAM-ST\Downloads\llm testing\GNN_CORA_LLMs-main\cora-competition\solution.py", line 57
+    !python encrypt_submission.py submission.csv submission.enc public_key.pem
+    ^
+SyntaxError: invalid syntax
+
+
+===== ATTEMPT 1 =====
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "C:\Users\ADAM-ST\Downloads\llm testing\GNN_CORA_LLMs-main\cora-competition\solution.py", line 2, in <module>
+    from torch_geometric.datasets import Cora
+ImportError: cannot import name 'Cora' from 'torch_geometric.datasets' (C:\Users\ADAM-ST\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch_geometric\datasets\__init__.py)
+
+
+===== ATTEMPT 2 =====
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "C:\Users\ADAM-ST\Downloads\llm testing\GNN_CORA_LLMs-main\cora-competition\solution.py", line 37, in <module>
+    train()
+    ~~~~~^^
+  File "C:\Users\ADAM-ST\Downloads\llm testing\GNN_CORA_LLMs-main\cora-competition\solution.py", line 31, in train
+    out = model(data)
+  File "C:\Users\ADAM-ST\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM-ST\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\ADAM-ST\Downloads\llm testing\GNN_CORA_LLMs-main\cora-competition\solution.py", line 21, in forward
+    return F.log_softmax(x, dim=1)
+           ^
+NameError: name 'F' is not defined
+
+
+===== ATTEMPT 3 =====
+Accuracy: 0.7820
+
+--- STDERR ---
